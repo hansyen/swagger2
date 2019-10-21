@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: k8s-jenkins
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: k8s-jenkins
+  template:
+    metadata:
+      labels:
+        app: k8s-jenkins
+    spec:
+      containers:
+      - name: k8s-jenkins
+        image: ohya/swagger2-deploy
+#        resources:
+#          limits:
+#            memory: 0
+#            cpu: 0
+#        imagePullPolicy: Always
+        ports:
+        - containerPort: 7000
+#      restartPolicy: Always

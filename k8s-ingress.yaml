@@ -1,0 +1,15 @@
+# ingress.yaml
+
+---
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: web
+spec:
+  rules:
+  - host: ohya.swagger2.com
+    http:
+      paths:
+      - backend:
+          serviceName: k8s-swagger-service
+          servicePort: 7000
