@@ -14,9 +14,15 @@ CORS(app, supports_credentials=True)
 def show_swagger():
     return """
     <head>
-    <meta http-equiv="refresh" content="0; url=http://petstore.swagger.io/?url=http://192.168.99.105:30750/api/swagger.json" />
+    <meta http-equiv="refresh" content="0; url=http://petstore.swagger.io/?url=http://ohya.swagger.gogogo/api/swagger.json" />
     </head>
     """
+
+    # return """
+    # <head>
+    # <meta http-equiv="refresh" content="0; url=http://petstore.swagger.io/?url=http://127.0.0.1:80/api/swagger.json" />
+    # </head>
+    # """
 
 
 def create_app():
