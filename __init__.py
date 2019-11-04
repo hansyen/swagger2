@@ -14,7 +14,7 @@ CORS(app, supports_credentials=True)
 def show_swagger():
     return """
     <head>
-    <meta http-equiv="refresh" content="0; url=http://petstore.swagger.io/?url=http://ohya.swagger.gogogo/api/swagger.json" />
+    <meta http-equiv="refresh" content="0; url=http://petstore.swagger.io/?url=http://ohya.swagger.gogogo/ohya/api/swagger.json" />
     </head>
     """
 
