@@ -16,6 +16,8 @@ WORKDIR /swagger2-app
 # pip install
 RUN pip install -r requirements.txt
 
+EXPOSE 80
+
 # 執行python指令
 ENTRYPOINT ["python"]
 # 執行start_api_test.py
